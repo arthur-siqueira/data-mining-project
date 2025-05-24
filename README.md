@@ -1,32 +1,33 @@
 # Projeto de Estatística Aplicada
 
-## 🧑‍💻 Autores  
-- Nome 1 (matrícula) - email  
-- Nome 2 (matrícula) - email  
-- Nome 3 (matrícula) - email  
+## 🧑‍💻 Autor
+- Arthur Siqueira (202121250031) - arthur.siqueira@academico.ifpb.edu.br 
 
 ## 🎯 Tema e Motivação  
-Descreva em até dois parágrafos o tema que será investigado no projeto e a motivação da equipe para essa escolha.  
-Explique por que esse tema é relevante ou interessante do ponto de vista estatístico ou social.
+Este projeto busca classificar fundos de investimento (ETFs e Mutual Funds) como conservadores, moderados ou agressivos, com base em dados públicos extraídos do Yahoo Finance. Utilizando técnicas de mineração de dados, serão analisados indicadores como rentabilidade, volatilidade e composição da carteira, aplicando-se algoritmos de classificação para identificar padrões de risco.
+
+A escolha do tema se justifica pela relevância social e estatística: investidores, especialmente os iniciantes, enfrentam dificuldade em avaliar o risco dos fundos disponíveis. A análise permite não apenas aplicar modelos preditivos em dados reais e multivariados, mas também contribuir para decisões financeiras mais informadas e conscientes.
 
 ## 📊 Conjunto de Dados Selecionado  
 - **Nome do conjunto de dados:**  
-  (Exemplo: "World Happiness Report", "ENEM 2023", "IBGE - PNAD Contínua", "Kaggle - Netflix Movies", etc.)
+  US Funds dataset from Yahoo Finance
 
 - **Fonte:**  
-  (Link ou citação da base de dados)
+  https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs
 
 - **Descrição breve:**  
-  Explique o que representa esse conjunto de dados, qual o escopo (temporal, geográfico, etc.), quais as principais variáveis presentes e o motivo pelo qual ele foi escolhido.  
+  A base de dados reúne informações financeiras de 23.783 fundos mútuos e 2.310 ETFs dos Estados Unidos, extraídas do Yahoo Finance. Ela inclui dados como composição da carteira, retornos históricos, indicadores financeiros   
+  (alpha, beta, índice de Sharpe, entre outros) e pontuações ESG, permitindo análises comparativas sobre perfil de risco e desempenho dos fundo.
 
 - **Justificativa para a escolha:**  
-  Indique por que esse conjunto de dados permite análises estatísticas interessantes e como ele pode responder a questões relevantes.
-
+  Esse conjunto de dados permite análises estatísticas interessantes por conter diversas variáveis financeiras, possibilitando a aplicação de técnicas como análise exploratória, correlação e classificação. Com isso, é possível 
+  responder a questões relevantes sobre o perfil de risco dos fundos e seu desempenho no mercado.
 ---
 
 ## ❓ Perguntas ou Hipóteses  
-*Começar a planejar com perguntas de Estatística Descritiva*  
-Liste aqui as perguntas de pesquisa ou hipóteses estatísticas que o grupo pretende investigar com base nos dados.
+- Quais são as características mais comuns entre os fundos classificados como conservadores, moderados e agressivos?
+- Existe diferença significativa na média de retorno anual entre os diferentes perfis de risco?
+- Fundos com maior percentual em ações tendem a apresentar maior volatilidade?
 
 ## 🔍 Metodologia  
 *A preencher na próxima etapa.*  
