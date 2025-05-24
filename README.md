@@ -16,8 +16,7 @@ A escolha do tema se justifica pela relevância social e estatística: investido
   https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs
 
 - **Descrição breve:**  
-  A base de dados reúne informações financeiras de 23.783 fundos mútuos e 2.310 ETFs dos Estados Unidos, extraídas do Yahoo Finance. Ela inclui dados como composição da carteira, retornos históricos, indicadores financeiros   
-  (alpha, beta, índice de Sharpe, entre outros) e pontuações ESG, permitindo análises comparativas sobre perfil de risco e desempenho dos fundo.
+  A base de dados reúne informações financeiras de 23.783 fundos mútuos e 2.310 ETFs dos Estados Unidos, extraídas do Yahoo Finance. Ela inclui dados como composição da carteira, retornos históricos, indicadores financeiros (alpha, beta, índice de Sharpe, entre outros) e pontuações ESG, permitindo análises comparativas sobre perfil de risco e desempenho dos fundo.
 
 - **Justificativa para a escolha:**  
   Esse conjunto de dados permite análises estatísticas interessantes por conter diversas variáveis financeiras, possibilitando a aplicação de técnicas como análise exploratória, correlação e classificação. Com isso, é possível 
