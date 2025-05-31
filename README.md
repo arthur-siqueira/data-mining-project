@@ -14,8 +14,7 @@ A motivação está no desafio enfrentado por investidores (especialmente inicia
   
 - **Fonte:**  
    Dados públicos da B3: https://www.b3.com.br/en_us/market-data-and-indices/
-   Estrutura em formato Data Warehouse disponível em:
-   https://www.kaggle.com/datasets/leomaurodesenv/b3-stock-indexes
+   Estrutura em formato Data Warehouse disponível em: https://www.kaggle.com/datasets/leomaurodesenv/b3-stock-indexes
 
 - **Descrição breve:**  
   O conjunto contém dados históricos de preços de ações listadas na bolsa brasileira (B3), organizados em tabelas dimensionais e fato. As informações incluem preços de abertura, fechamento, máximos e mínimos diários, volume financeiro negociado e a classificação setorial das empresas.
