@@ -4,29 +4,30 @@
 - Arthur Siqueira (202121250031) - arthur.siqueira@academico.ifpb.edu.br 
 
 ## 🎯 Tema e Motivação  
-Este projeto busca classificar fundos de investimento (ETFs e Mutual Funds) como conservadores, moderados ou agressivos, com base em dados públicos extraídos do Yahoo Finance. Utilizando técnicas de mineração de dados, serão analisados indicadores como rentabilidade, volatilidade e composição da carteira, aplicando-se algoritmos de classificação para identificar padrões de risco.
+Este projeto tem como objetivo classificar ações negociadas na B3 (Brasil, Bolsa, Balcão) em perfis de risco — conservadoras, moderadas ou agressivas — com base em indicadores como retorno médio e volatilidade anual. A partir dessa classificação, serão criadas carteiras de investimento simuladas, cujos desempenhos serão avaliados ao longo dos anos.
 
-A escolha do tema se justifica pela relevância social e estatística: investidores, especialmente os iniciantes, enfrentam dificuldade em avaliar o risco dos fundos disponíveis. A análise permite não apenas aplicar modelos preditivos em dados reais e multivariados, mas também contribuir para decisões financeiras mais informadas e conscientes.
+A motivação está no desafio enfrentado por investidores (especialmente iniciantes) ao selecionar ativos com base em seu perfil de risco. A aplicação de técnicas estatísticas e de agrupamento permite a construção de uma análise quantitativa clara e objetiva, contribuindo para decisões de investimento mais embasadas e conscientes.
 
 ## 📊 Conjunto de Dados Selecionado  
 - **Nome do conjunto de dados:**  
-  US Funds dataset from Yahoo Finance
-
+  Brazilian Stock Market Data Warehouse (Ações da B3)
+  
 - **Fonte:**  
-  https://www.kaggle.com/datasets/stefanoleone992/mutual-funds-and-etfs
+   Dados públicos da B3: https://www.b3.com.br/en_us/market-data-and-indices/
+   Estrutura em formato Data Warehouse disponível em:
+   https://www.kaggle.com/datasets/leomaurodesenv/b3-stock-indexes
 
 - **Descrição breve:**  
-  A base de dados reúne informações financeiras de 23.783 fundos mútuos e 2.310 ETFs dos Estados Unidos, extraídas do Yahoo Finance. Ela inclui dados como composição da carteira, retornos históricos, indicadores financeiros (alpha, beta, índice de Sharpe, entre outros) e pontuações ESG, permitindo análises comparativas sobre perfil de risco e desempenho dos fundo.
+  O conjunto contém dados históricos de preços de ações listadas na bolsa brasileira (B3), organizados em tabelas dimensionais e fato. As informações incluem preços de abertura, fechamento, máximos e mínimos diários, volume financeiro negociado e a classificação setorial das empresas.
 
 - **Justificativa para a escolha:**  
-  Esse conjunto de dados permite análises estatísticas interessantes por conter diversas variáveis financeiras, possibilitando a aplicação de técnicas como análise exploratória, correlação e classificação. Com isso, é possível 
-  responder a questões relevantes sobre o perfil de risco dos fundos e seu desempenho no mercado.
+   O dataset oferece um cenário realista e estruturado para análises financeiras multivariadas, permitindo cálculos estatísticos relevantes e aplicação de técnicas como clusterização e simulação de carteiras. Além disso, possibilita investigar o comportamento de ações por setor e perfil de risco.
 ---
 
 ## ❓ Perguntas ou Hipóteses  
-- Quais são as características mais comuns entre os fundos classificados como conservadores, moderados e agressivos?
-- Existe diferença significativa na média de retorno anual entre os diferentes perfis de risco?
-- Fundos com maior percentual em ações tendem a apresentar maior volatilidade?
+- É possível classificar ações brasileiras em perfis de risco (conservadoras, moderadas e agressivas) com base em seus retornos e volatilidade?
+- Como se comportam carteiras compostas por ações de diferentes perfis ao longo do tempo?
+- Quais setores concentram os ativos com maior ou menor risco?
 
 ## 🔍 Metodologia  
 *A preencher na próxima etapa.*  
