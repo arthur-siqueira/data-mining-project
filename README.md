@@ -29,24 +29,30 @@ A motivação está no desafio enfrentado por investidores (especialmente inicia
 - Quais setores concentram os ativos com maior ou menor risco?
 
 ## 🔍 Metodologia  
-*A preencher na próxima etapa.*  
-Indique quais técnicas estatísticas serão utilizadas (análise exploratória, testes, correlações, modelos, etc.).
+- Merge de factStocks + dimCompany + dimTime; padronização de datetime e 1 registro/dia/empresa.
+- Feature engineering: lags (1, 5, 20) e médias/desvios móveis (5, 20, 60) com shift(1).
+- Split temporal: treino ≤ 31/12/2014; teste 2015–2020.
+- Modelos: ARIMA(1,1,1) para Banco do Brasil; Gradient Boosting (GBR) e MLP para PETROBRAS e VALE.
+- Métricas: RMSE, MAE e MAPE; exportação de CSVs (Real vs Previsto).
 
 ## 🛠️ Ferramentas Utilizadas  
-*A preencher na próxima etapa.*  
-Quais linguagens, bibliotecas ou softwares serão utilizados no projeto.
+- Linguagem: Python (Jupyter/Colab).
+- Bibliotecas: pandas, numpy, matplotlib/seaborn; statsmodels (ARIMA), scikit-learn (GBR, MLP, StandardScaler).
 
 ## 📈 Resultados  
-*A preencher após as análises.*  
-Resumo visual e interpretativo dos principais achados.
+- Banco do Brasil (ARIMA): MAPE ≈ 29,99% (benchmark).
+- PETROBRAS: MLP melhor — MAPE ≈ 8,89% (GBR ≈ 17,54%).
+- VALE: GBR melhor por MAPE — ≈ 2,81% (MLP ≈ 3,14%).
+- CSVs gerados com Real e Previsto para 2015–2020.
 
 ## 📌 Conclusões  
-*A preencher no final do projeto.*  
-Síntese dos aprendizados e implicações das análises realizadas.
+- O ativo influencia o modelo vencedor (MLP em PETROBRAS; GBR em VALE).
+- O pipeline temporal e as features sem vazamento são decisivos.
+- O ARIMA cumpriu o papel de benchmark; métodos supervisionados superaram-no em PETR/VALE.
 
 ## ⚠️ Limitações e Trabalhos Futuros  
-*A preencher no final do projeto.*  
-Quais foram as limitações do estudo e o que poderia ser feito com mais tempo ou dados adicionais.
-
+- preços possivelmente não 100% ajustados a desdobramentos/proventos.
+- Sem variáveis exógenas (Ibovespa, USD/BRL, Selic); tuning limitado; sem walk-forward.
+- Próximos passos: usar preço ajustado/log-retornos e incluir exógenas.
 ---
 
